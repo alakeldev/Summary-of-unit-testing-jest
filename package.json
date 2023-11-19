@@ -1,0 +1,14 @@
+{
+  "name": "summary-of-unit-testing-jest",
+  "version": "1.0.0",
+  "description": "- Software testing method that break your software to pieces\r - Tests written and run By the software developer\r - It test a section (unit) in your App to ensure it works and behaves like expected\r - unit test can be for one method\r - unit test can be fore the whole class in OOP\r - unite test can be the whole Module\r - unit test can be done for the whole procedure\r - a unit is smallest testable part of any software",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "alakel",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

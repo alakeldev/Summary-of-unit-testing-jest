@@ -19,3 +19,12 @@ test("Return the Sum of num1 + num2", () => {
 test("Return the Sum of num1 + num2 + num3", () => {
     expect(theSum(10, 20, 30)).toBe(60);
 });
+
+test("Return the Sum of num1 + num2 + num3 + num4", () => {
+    expect(theSum(10, 20, 30, 10)).toBe(70);
+});
+
+test("Return the Sum of all Numbers", () => {
+    expect(theSum(1, 9, 10, 40, 20, 10, 100 ,10)).toBe(200);
+});
+

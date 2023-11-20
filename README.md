@@ -75,10 +75,10 @@ TDD => Test Driven Development
 
 ## steps Important to do to make your tests work perfectly
 
-- module exports inside the file that you want to test its components========>>>>>>>>module.exports = function/module name that you want to test it;
-- Import the file you want to test it inside the test file============>>>>>>>>>>>>const name/variable = require("file path that you want to test it");
+- module exports inside the file that you want to test its components========>>>>>>>> module.exports = function/module name that you want to test it;
+- Import the file you want to test it inside the test file============>>>>>>>>>>>> const name/variable = require("file path that you want to test it");
 
-- you can run the test by writing on the terminal: npm test
+- you can run the test by writing on the terminal: ==========>>>>>>>>>>> npm test
 
 - Important note if you want to run the test regularly without writing the command on the terminal open the file package.json and edit the value
 of "test" : "jest" ===> "test": "jest --watchAll" 

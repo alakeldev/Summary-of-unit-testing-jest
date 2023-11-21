@@ -37,7 +37,7 @@ const theSum = require("../sum");
 // Describe(name, function)
 describe("check the Numbers sum Total", () => {
 
-    describe("Check if no or only one number entered", () => {
+    describe.only("Check if no or only one number entered", () => {      // we are using here only to only run the check only on this describe tests block
         //test block
         test("Return 0 if no Number", () => {
             expect(theSum()).toBe(0);
@@ -50,11 +50,11 @@ describe("check the Numbers sum Total", () => {
 
     describe("check for more than one number", () => {
         //test block
-        test("Return the Sum of num1 + num2", () => {
+        test("Return the Sum of num1 + num2", () => {    
             expect(theSum(15, 25)).toBe(40);
         });
         //test block
-        test("Return the Sum of num1 + num2 + num3", () => {
+        test.only("Return the Sum of num1 + num2 + num3", () => {    // we are using here only to only run the check only on this test
             expect(theSum(10, 20, 30)).toBe(60);
         });
         //test block

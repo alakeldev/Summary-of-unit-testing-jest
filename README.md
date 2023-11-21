@@ -83,3 +83,11 @@ TDD => Test Driven Development
 - Important note if you want to run the test regularly without writing the command on the terminal open the file package.json and edit the value
 of "test" : "jest" ===> "test": "jest --watchAll" 
 then the test automatically will each time you save the test file if you don't want just remove the --watchAll then you want to write npm test on the terminal the run the test again
+
+
+
+## Using only 
+you can use only with test and also with describe just to run the test on a specific test or block of describe tests without run the test on the rest.
+
+## using skip
+you can use skip some tests and also it works with describe the block of tests so it's important to know skip

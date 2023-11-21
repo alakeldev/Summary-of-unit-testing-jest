@@ -94,3 +94,14 @@ you can use skip some tests and also it works with describe the block of tests s
 
 
 ## beforeAll , beforeEach
+check the file .methods.js and understand the comments inside it
+
+
+
+## toHaveLength   ,,   .toContain  ,,  not.toHaveLength    ,, not.toContain  
+check the file all.test.js to understand it all 
+
+also we use for loop inside this file all.test.js important to understand 
+
+
+

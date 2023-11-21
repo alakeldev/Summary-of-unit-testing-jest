@@ -136,3 +136,31 @@ another example to create your own matcher inside the file check all.test.js und
 check the file all.test.js to understand it all
 
 
+## Code Coverage
+it's a way to see what is exactly changed or edit inside your project files.js without test on it 
+you write on termianl ==>=>=>=>=>=>=>==>=>=>  npm test -- --coverage
+
+it will initiate the converage file to check the reports 
+
+
+if you want to don'T write this command and you want to be always note for these changes you gonna follow as per below:
+
+open file: package.json
+in the last before the last } you will add:
+,
+"jest": {
+    "collectCoverage": true
+}
+
+
+also one from the option you can add in the same file package.json file below the "collectCoverage": true, as per below
+
+"jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+        "html"
+    ]
+}
+
+
+so That is meaning i want only html repoerts to be initiate inside the coverage file

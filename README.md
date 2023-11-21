@@ -97,6 +97,7 @@ you can use skip some tests and also it works with describe the block of tests s
 check the file .methods.js and understand the comments inside it
 
 
+# Matchers:
 
 ## toHaveLength   ,,   .toContain  ,,  not.toHaveLength    ,, not.toContain  
 check the file all.test.js to understand it all 
@@ -108,3 +109,10 @@ also we use for loop inside this file all.test.js important to understand
 ## isNaN
 is Not a Number
 
+## toBeFalsy   ,, toBeTruthy   ,,  toBeGreaterThan  ,, toBeGreaterThanOrEqual ,,,toBeLessThan  ,, toBeLessThanOrEqual
+check the file all.test.js to understand it all
+
+
+
+## toBeUndefined  ,,    toMatch   ,, toHaveProperty ,, 
+check the file all.test.js to understand it all

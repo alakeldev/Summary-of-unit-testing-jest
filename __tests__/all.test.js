@@ -129,7 +129,7 @@ test("check for substring inside string by Reqular Expression", () => {
 
 
 // toHaveProperty() matcher  here it accepts and key and its value but please be note that the value is optional
-
+// it works with objects Important
 test("Check for property Age inside myObjacet", () => {
     let myObject = {
         name: "Alakel",

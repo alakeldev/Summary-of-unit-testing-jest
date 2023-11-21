@@ -154,10 +154,11 @@ test("Check for property Age inside myObjacet and its value is 30", () => {
 
 
 
+// make your matcher part 1
 
 // make your own matcher:    Important to understand
 expect.extend({
-    toBeLargerThan(received, target) {
+    toBeLargerThan(received, target) {    // here you set the name of your own matcher and set its parameters 
         const pass = received > target;
 
         if (pass) {        // it means if(true)
@@ -179,4 +180,35 @@ expect.extend({
 // to test my new matcher toBeLargerThan()
 test("check if number is larger than other number", () => {
     expect(10).toBeLargerThan(8)
+});
+
+
+
+
+
+
+// make your matcher part 2
+expect.extend({
+    toBeBetween(received, start, end) {
+        const pass = received > start && received < end;
+
+        if(pass) {
+            return {
+                message: () => {`Expected ${received} to Be between ${start} And ${end}`},
+                pass: true,
+            }
+        } else {
+            return {
+                message: () => { `Error: Expected ${received} to Be between ${start} And ${end}`},
+                pass: false,
+            }
+        }
+    }
+})
+
+
+
+// try our new matcher 
+test("Check if the Year is between Years Range", () => {
+    expect(1980).toBeBetween(1970, 2023)
 });

@@ -107,3 +107,45 @@ test("Check if array first element is less than 5", () => {
 test("Check if array first element is less than 5", () => {
     expect(allData[4]).toBeLessThanOrEqual(5);             // pass
 });
+
+
+// Matchers Part 3
+// toBeUndefined matcher
+test("check for undefined",() => {
+    let a;
+
+    expect(a).toBeUndefined();
+
+});
+
+
+// using toMatch() matcher
+test("check for substring inside string by Reqular Expression", () => {
+    let myString = "I Love Jest Framework";
+    expect(myString).toMatch(/Jest/);
+
+});
+
+
+
+// toHaveProperty() matcher  here it accepts and key and its value but please be note that the value is optional
+
+test("Check for property Age inside myObjacet", () => {
+    let myObject = {
+        name: "Alakel",
+        age: 30,
+    };
+    expect(myObject).toHaveProperty("age");
+});
+
+
+
+
+test("Check for property Age inside myObjacet and its value is 30", () => {
+    let myObject = {
+        name: "Alakel",
+        age: 30,
+    };
+    expect(myObject).toHaveProperty("age", 30);
+});
+

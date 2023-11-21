@@ -12,9 +12,14 @@
     "jest": "^29.7.0"
   },
   "jest": {
+    "//1":"Comment to write it inside json file IMPORTANT IMPORTANT",
     "collectCoverage": true,
     "coverageReporters": [
       "html"
-    ]
+    ],
+    "//2": "Comment to write it inside json file IMPORTANT IMPORTANT",
+    "coverageDirectory": "reports",
+    "collectCoverageFrom": ["**/*.{js,jsx,ts}"],
+    "coveragePathIgnorePatterns": ["/node_modules/", "/build/"]
   }
 }

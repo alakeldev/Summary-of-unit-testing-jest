@@ -166,6 +166,39 @@ also one from the option you can add in the same file package.json file below th
 so That is meaning i want only html repoerts to be initiate inside the coverage file
 
 
+"jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "coverageDirectory": "reports"
+  }
+
+ "coverageDirectory": "reports" =>>>>>>>>>>> Here it means to specify the folder path/name that i want to initiate my reports folders in it
+on terminal write =====>>>>>>> npm test -- --coverage
+
+
+
+ "collectCoverageFrom": ["**/*.{js,jsx,ts}"]
+
+it means that you want to put the array that you want to collect the coverage from
+
+if you want to ignore some type files you can use
+
+ "coveragePathIgnorePatterns": ["/node_modules/"]   it's by default value that ignore node_modules
+ you can add another modules as per example below:
+ "coveragePathIgnorePatterns": ["/node_modules/", "/build/"]
+
+
+
+ comments inside json file as per below:
+
+ "//2": "Comment to write it inside json file IMPORTANT IMPORTANT",
+ "//3": "Comment to write it inside json file IMPORTANT IMPORTANT",
+
+ check package.json file to understand
+
+
 
 ## Mock functions
 Spies functions that checks and spy on the behaviour of the function that my code calling, it helps us to control the test process and its behavior

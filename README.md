@@ -105,3 +105,6 @@ also we use for loop inside this file all.test.js important to understand
 
 
 
+## isNaN
+is Not a Number
+

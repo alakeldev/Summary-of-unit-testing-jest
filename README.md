@@ -207,3 +207,12 @@ replace the part the we douldn't control it with a part that we can control it i
 one of the website that make the mock functions: <https://sinonjs.org/>
 
 also jest give it to us with a professional way out of the box
+
+
+## To read and continue unit testing learning journey   (jest)
+
+jest website <https://jestjs.io/> to read the documentation
+
+cheatsheet : <https://devhints.io/jest>
+
+github jest cheatsheet: <https://github.com/sapegin/jest-cheat-sheet>  Important

@@ -120,6 +120,8 @@ check the file all.test.js to understand it all
 
 
 ## Make Your Own Matcher and extend on the expect method
+check the file all.test.js to understand it all
+
 to add your own matcher to the matcher list of jest framework
 
 when we are going to make our own matcher you must use inside your matcher two properties message and pass (and they are build in properties)
@@ -127,3 +129,10 @@ check all.test.js file to understand that     ///toBeLargerThan() matcher////
 
 
 another example to create your own matcher inside the file check all.test.js under name: toBeBetween()
+
+
+
+## expect.anything()   ,,, expect.any(Constructor) ,,,   expect.arrayContaining(array)
+check the file all.test.js to understand it all
+
+

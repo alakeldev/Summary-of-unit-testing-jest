@@ -207,8 +207,55 @@ expect.extend({
 })
 
 
-
 // try our new matcher 
 test("Check if the Year is between Years Range", () => {
     expect(1980).toBeBetween(1970, 2023)
 });
+
+
+
+
+
+// expect.anything() => that means it will match anything except two values:    null and undefined
+// expect anything will always use with matcher toEqual()
+
+test("Expect anything", () => {
+    let x;
+    let t = null;
+    expect("Alakel").toEqual(expect.anything());      // pass
+    expect(1).toEqual(expect.anything());        // pass 
+    expect([0,1,2,3,4,5,6,8]).toEqual(expect.anything());   // pass
+
+    // expect(x).toEqual(expect.anything());   // failed because it's undefined
+    // expect(t).toEqual(expect.anything());   // failed because it's null
+
+});
+
+
+// expect.any(Constructor) => you are using a constructor same as the OOP constructors Number , String ,,,,,,,
+// also will always use with matcher toEqual()
+test("Expect Any Constructor", () => {
+    expect("Alakel").toEqual(expect.any(String));     // pass   String constructor
+});
+
+
+test("Expect Any Constructor", () => {
+    expect(10).toEqual(expect.any(Number));     // pass      Number Constructor
+});
+
+
+
+// very Important
+// expect.arrayContaining(array)  => it'S to match the array element with another array element and check if it's from its elements or not
+// used with toEqual matcher Important 
+test("Expect Array to be found in the main array", () => {
+    const myArray = [1, 2, 3, 4, 5];
+    expect(myArray).toEqual(expect.arrayContaining([5,2,1]));   // pass
+});
+
+
+
+// test("Expect Array to be found in the main array", () => {
+//     const myArray = [1, 2, 5, 4, 8];
+//     expect(myArray).toEqual(expect.arrayContaining([1, 10]));   // failed
+// });

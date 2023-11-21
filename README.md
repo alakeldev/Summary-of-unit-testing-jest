@@ -164,3 +164,13 @@ also one from the option you can add in the same file package.json file below th
 
 
 so That is meaning i want only html repoerts to be initiate inside the coverage file
+
+
+
+## Mock functions
+Spies functions that checks and spy on the behaviour of the function that my code calling, it helps us to control the test process and its behavior
+replace the part the we douldn't control it with a part that we can control it inside the test process
+
+one of the website that make the mock functions: <https://sinonjs.org/>
+
+also jest give it to us with a professional way out of the box

@@ -116,3 +116,11 @@ check the file all.test.js to understand it all
 
 ## toBeUndefined  ,,    toMatch   ,, toHaveProperty ,, 
 check the file all.test.js to understand it all
+
+
+
+## Make Your Own Matcher and extend on the expect method
+to add your own matcher to the matcher list of jest framework
+
+when we are going to make our own matcher you must use inside your matcher two properties message and pass (and they are build in properties)
+check all.test.js file to understand that     ///toBeLargerThan() matcher////

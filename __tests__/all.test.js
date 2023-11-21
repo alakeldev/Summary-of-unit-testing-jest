@@ -51,10 +51,10 @@ test("check if array not contains number 8 ", () => {
 
 // using for loop and you want to check if the array has a 0 number inside its elements
 test("check if array not contains Number Zero", () => {
-    for(let i = 0; i < allData.length; i++) {
-        expect(allData[i]).not.toBe(0);       
+    for (let i = 0; i < allData.length; i++) {
+        expect(allData[i]).not.toBe(0);
     }
-    
+
 });
 
 
@@ -70,7 +70,7 @@ test("check if array not contains Number Zero", () => {
 
 // using matcher toBeFalsy();   it's the same work and behaviuor of the previous test
 test("check if array contains only numbers", () => {
-    for(let i = 0; i < allData.length; i++) {
+    for (let i = 0; i < allData.length; i++) {
         expect(isNaN(allData[i])).toBeFalsy();
     }
 });
@@ -111,7 +111,7 @@ test("Check if array first element is less than 5", () => {
 
 // Matchers Part 3
 // toBeUndefined matcher
-test("check for undefined",() => {
+test("check for undefined", () => {
     let a;
 
     expect(a).toBeUndefined();
@@ -149,3 +149,34 @@ test("Check for property Age inside myObjacet and its value is 30", () => {
     expect(myObject).toHaveProperty("age", 30);
 });
 
+
+
+
+
+
+
+// make your own matcher:    Important to understand
+expect.extend({
+    toBeLargerThan(received, target) {
+        const pass = received > target;
+
+        if (pass) {        // it means if(true)
+
+            return {
+                message: () => {`Expected ${received} To Be Larger Than ${target}`}, // the message to show after the test
+                pass: true,    // pass true that's meaning that the test passed
+            }
+        } else {
+            return {
+                message: () => {`Error: Expected ${received} To Be Larger Than ${target}`},   // the message to show after the test
+                pass: false,   // pass false that's meaning that the test failed
+            }
+        }
+    }
+});
+
+
+// to test my new matcher toBeLargerThan()
+test("check if number is larger than other number", () => {
+    expect(10).toBeLargerThan(8)
+});

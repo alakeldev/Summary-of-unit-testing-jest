@@ -91,3 +91,6 @@ you can use only with test and also with describe just to run the test on a spec
 
 ## using skip
 you can use skip some tests and also it works with describe the block of tests so it's important to know skip
+
+
+## beforeAll , beforeEach
